@@ -4,7 +4,20 @@ module.exports = {
   purge: ".index.html",
   content: ["./index.html"],
   theme: {
-    extend: {},
+    extend: {
+      rounded: {
+        '50': '50px',
+      },
+      height: {
+        '80': '80vh',
+      },
+      fontFamily: {
+        merri: ['Merriweather Sans'],
+        garamond:['EB Garamond']
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+  ],
 }
